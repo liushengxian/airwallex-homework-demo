@@ -1,0 +1,17 @@
+.specificTitle {
+    text-align: center;
+    min-width: 300px;
+    position: relative;
+    margin-bottom: 20px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        margin-left: -10px;
+        bottom: 0;
+        display: block;
+        width: 20px;
+        border-bottom: 3px solid #00f;
+    }
+}
