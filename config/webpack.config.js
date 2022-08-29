@@ -406,6 +406,7 @@ module.exports = function (webpackEnv) {
             {
               test: /\.(js|mjs|jsx|ts|tsx)$/,
               include: paths.appSrc,
+              exclude: /\.stories.(js|jsx|ts|tsx)$/,
               loader: require.resolve('babel-loader'),
               options: {
                 customize: require.resolve(

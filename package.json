@@ -73,7 +73,9 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "eslintConfig": {
     "extends": [
@@ -148,5 +150,15 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.5.10",
+    "@storybook/addon-essentials": "^6.5.10",
+    "@storybook/addon-interactions": "^6.5.10",
+    "@storybook/addon-links": "^6.5.10",
+    "@storybook/builder-webpack5": "^6.5.10",
+    "@storybook/manager-webpack5": "^6.5.10",
+    "@storybook/react": "^6.5.10",
+    "@storybook/testing-library": "0.0.13"
   }
 }
